@@ -321,7 +321,7 @@
 #![deny(missing_docs)]
 
 #[macro_use]
-extern crate my_serde as serde;
+extern crate serde;
 #[cfg(feature = "preserve_order")]
 extern crate indexmap;
 extern crate itoa;

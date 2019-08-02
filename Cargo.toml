@@ -16,9 +16,10 @@ travis-ci = { repository = "serde-rs/json" }
 appveyor = { repository = "serde-rs/json" }
 
 [dependencies]
-# Renamed my_serde so that we can have std feature without giving std feature
+# Use a fork of serde arbitrarily renamed to my_serde
+# so that we can have std feature without giving std feature
 # to serde in the rest of the project
-my_serde = { package = "serde", version = "1.0" }
+my_serde = { package = "serde", git = "https://github.com/cbeck88/serde", rev = "ae578b8cffe0906f46e73916fc6389ca6112e43b" }
 indexmap = { version = "1.0", optional = true }
 itoa = "0.4.3"
 ryu = "1.0"
